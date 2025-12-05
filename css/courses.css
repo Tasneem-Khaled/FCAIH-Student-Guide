@@ -1,0 +1,90 @@
+:root {
+    --primary-blue: #1D256B;
+    --highlight-gold: #E2A606;
+    --light-gray: #fcfdfe;
+    --pure-white: #ffffff;
+    --border-gray: #ccc;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+/* navs and tabs */
+
+.nav-pills .nav-link,
+.nav-pills .show>.nav-link,
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: rgb(78, 78, 78);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    font-weight: 800;
+}
+
+.nav-pills .nav-item .nav-link::after {
+    content: "";
+    width: 0;
+    height: .1563rem;
+    background: var(--highlight-gold);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition: all 0.4s ease;
+}
+
+.nav-pills .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+/* static content */
+
+.title {
+    color: var(--highlight-gold);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 1.25rem;
+}
+.study-box,
+.tips-box {
+  background: var(--pure-white);
+  border: 1px solid var(--border-gray);
+  backdrop-filter: blur(4px);
+}
+
+.study-list li,
+.tips-list li ,.recomm-list li{
+    list-style: none;
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 20px;
+  color: #333;
+  position: relative;
+  padding-left: 18px;
+}
+
+.study-list li::before,
+.tips-list li::before,
+.recomm-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  background: var(--highlight-gold);
+  border-radius: 50%;
+}
+.recomm-list li{
+    padding-right: .625rem;
+}
+.recomm-list li::before{
+    left: 100%;
+}
+.recomm-list{
+    direction: rtl;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="./FCAIH/logo1.png" rel="icon" type="image/png">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/courses.css">
+
+    <title>FCAIH Guide</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nav">
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top ps-lg-4">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="./FCAIH/logo1.png" width="70" alt=""><a class="navbar-brand text-white ps-1"
+                    href="index.html">
+                    FCAIH Guide<span style="color: var(--highlight-gold);">.</span>
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="navbar-toggler-icon fa-solid fa-bars pt-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-lg-5 text-white">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Services">Student Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact Us</a></li>
+                </ul>
+                <a href="./html/login.html"><button class="nav-button rounded-5">Login</button></a>
+            </div>
+
+        </div>
+    </nav>
+    <header id="Home">
+        <div class="container-md h-100">
+            <div
+                class="home-content h-100 text-center d-flex flex-column justify-content-center align-items-center text-white">
+                <h2 class="header-word">Start your journey with clear information instead of confusion.</h2>
+                <p>Your all-in-one guide for : <span id="element"></span></p>
+            </div>
+        </div>
+    </header>
+    <section id="About">
+        <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="heading text-center">About</h2>
+            <div class="student-services row">
+                <div class="img-div col-md-4">
+                    <img class="w-100" src="./FCAIH/hand-cpu1.png" alt="Hand Over Cpu">
+                </div>
+                <div class="about-desc col-md-8 pt-4 px-3 ">
+                    <h3 class="text-center mb-3">Student Services</h3>
+                    <p>Here you will find many student services that help students provide them with the necessary
+                        skills and knowledge.</p>
+                    <div class="service-icons-box mx-auto text-center row mt-4">
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center ps-1 gap-2">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Course Details</p>
+                        </div>
+
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center gap-2">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <p>Campus Map</p>
+                        </div>
+
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center px-3 gap-2 no-border">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <p>Service Steps</p>
+                        </div>
+
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center gap-2">
+                            <i class="fa-solid fa-link"></i>
+                            <p>Official Links</p>
+                        </div>
+
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>Career Start</p>
+                        </div>
+
+                        <div
+                            class="service-icon col-4 col-md-2 d-flex flex-column justify-content-center align-items-center gap-2 border-0">
+                            <i class="fa-solid fa-headset"></i>
+                            <p>Get Support</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="Services">
+        <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="heading text-center">Services</h2>
+            <div class="row g-3 mt-3">
+                <!-- Course Guide & Study Plan -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-book-atlas"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Course Guide &amp; Study Plan</h3>
+                            <p>Understand every course clearly — descriptions, materials, grading, and study tips all in
+                                one place.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/course-guide.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>Go to Guide
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- College Map & Locations Guide -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>College Map &amp; Locations</h3>
+                            <p>Find any lecture hall, department, or office instantly with a searchable and interactive
+                                campus map.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/map.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>Open Map
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- University Services Guide -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Student Services Guide</h3>
+                            <p>Clear step-by-step guides for all student services — required papers, procedures,
+                                locations, and office hours.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/services.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>View Services
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Official Links Hub -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Official Links Hub</h3>
+                            <p>All important college and university links collected in one organized page with the
+                                option to save bookmarks.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/links.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>View Links
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Internships & Opportunities -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Internships &amp; Opportunities</h3>
+                            <p>Find internships suitable for your level + learn how to build your CV, LinkedIn, and
+                                GitHub through curated videos.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/internships.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>Explore
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Support & Ticketing -->
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Support &amp; Tickets</h3>
+                            <p>Submit problems, questions, or requests and track their status — a clear and direct
+                                support channel for students.</p>
+                        </div>
+                        <button class="btn btn-primary mt-3 rounded-5">
+                            <a href="./html/ticket.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-eye me-2"></i>Get Support
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact" class="bg-white">
+        <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="heading text-center">Contact Us</h2>
+            <div class="icons-contact-div mt-2 text-center row gx-5 gy-3">
+                <div class="col-lg-4">
+                    <div class="icon-card mx-3 inner d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-location-arrow"></i>
+                            </div>
+                        </div>
+                        <span class="fw-bold fs-5 m-0">Address</span>
+                        <p class="fw-light mt-1 fs-6">FCAI - Helwan Uni</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-card mx-3 inner d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </div>
+                        <span class="fw-bold fs-5 m-0">E-mail</span>
+                        <p class="fw-light mt-1 fs-6">Support@website.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-card mx-3 inner d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <span class="fw-bold fs-5 m-0">Phone</span>
+                        <p class="fw-light mt-1 fs-6">+20 010 2420 0707</p>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="">
+                <div class="row mt-2 gy-3">
+                    <div class="col-lg"><input type="text" required class="form-control py-2" placeholder="Name"
+                            aria-label="First name"></div>
+                    <div class="col-lg"><input type="text" required class="form-control py-2" placeholder="E-mail"
+                            aria-label="Last name"></div>
+                    <div class="mb-2"><textarea required class="form-control" id="exampleFormControlTextarea1"
+                            placeholder="Message" rows="7"></textarea></div>
+                    <div class="col-1"><button type="submit" class="btn btn-primary mb-1 px-5">submit</button></div>
+            </form>
+        </div>
+    </section>
+    <footer style="background-color: var(--primary-blue);">
+        <div class="container text-center text-white p-3">
+            <div class="row">
+                <p class="m-0">Copy Right 2025 © By Taneem All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="welcomeToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header custom-toast-header">
+                <strong class="me-auto" id="toastMessage">Welcome!</strong>
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

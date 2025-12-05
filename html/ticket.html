@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="../FCAIH/logo1.png" rel="icon" type="image/png">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ticket.css">
+
+    <title>FCAIH Complaints</title>
+</head>
+
+<body>
+    <nav style="background-color: var(--primary-blue);" id="nav" class="navbar navbar-expand-lg fixed-top ps-lg-4">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="../FCAIH/logo1.png" width="70" alt=""><a class="navbar-brand text-white ps-1"
+                    href="../index.html">
+                    FCAIH Guide<span style="color: var(--highlight-gold);">.</span>
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="navbar-toggler-icon fa-solid fa-bars pt-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-lg-5 text-white">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.html#Services">Student Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#Contact">Contact Us</a></li>
+                </ul>
+                <a href="./html/login.html"><button class="btn nav-button rounded-5">Login</button></a>
+            </div>
+
+        </div>
+    </nav>
+    <section class="pb-4">
+        <div class="container">
+            <div class="row mt-2 g-4">
+                <div class="col-12 mt-4">
+                    <div class="inner rounded-4 bg-white shadow p-lg-4">
+                        <div class="container px-4 d-flex flex-column justify-content-center align-items-center">
+                            <h2 class="heading text-center">Complaints</h2>
+                            <form action="" method="">
+                                <div class="row mt-2 gy-3">
+                                    <div class="col-lg-6"><input type="text" required class="form-control py-2"
+                                            placeholder="Name"></div>
+                                    <div class="col-lg-6"><input type="text" required class="form-control py-2"
+                                            placeholder="E-mail"></div>
+                                    <div class="col-lg-6"><input type="tel" required class="form-control py-2"
+                                            placeholder="Phone"></div>
+                                    <div class="col-lg-6"><input type="text" required id="requestInput"
+                                            class="form-control py-2" placeholder="Request"></div>
+                                    <div class="mb-2"><textarea required class="form-control"
+                                            id="exampleFormControlTextarea1" placeholder="Problem" rows="7"></textarea>
+                                    </div>
+                                    <label class="form-label fw-bold" style="color: var(--highlight-gold);">Select
+                                        Priority</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            LOW
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault2" checked>
+                                        <label class="form-check-label" for="radioDefault2">
+                                            NORMAL
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault3">
+                                        <label class="form-check-label" for="radioDefault3">
+                                            CRITICAL
+                                        </label>
+                                    </div>
+                                    <div id="btn-submit" class="col-1"><button type="submit"
+                                            class="btn btn-primary mb-1 px-5">submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="mt-3 table table-white text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Problem</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Portal's Login Issue</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Transcript Request Delay</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tableBody = document.getElementById('tableBody');
+        const text = document.getElementById('requestInput').value.trim();
+        let i = 2;
+        document.getElementById("btn-submit").addEventListener('click', (e) => {
+            e.preventDefault();
+            displayProblem();
+        })
+        function displayProblem() {
+            const text = document.getElementById('requestInput').value.trim();
+            if(text == '') return;
+            const tr = document.createElement("tr");
+            const th = document.createElement("th");
+            th.scope = "row";
+            th.textContent = i+1;
+            const tdRequest = document.createElement("td");
+            tdRequest.textContent = text;
+            const tdStatus = document.createElement("td");
+            tdStatus.textContent = "Pending";
+            tr.appendChild(th);
+            tr.appendChild(tdRequest);
+            tr.appendChild(tdStatus);
+            tableBody.appendChild(tr);
+            i++;
+            document.querySelector("form").reset();
+        }
+    </script>
+    <script src="../js/nav.js"></script>
+</body>
+
+</html>

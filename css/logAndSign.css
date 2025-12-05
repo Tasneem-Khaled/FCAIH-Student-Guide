@@ -1,0 +1,57 @@
+:root {
+    --primary-blue: #1D256B;
+    --highlight-gold: #E2A606;
+    --light-gray: #fcfdfe;
+    --pure-white: #ffffff;
+    --border-gray: #ccc;
+}
+
+body {
+    font-family: "cairo", "Poppins", sans-serif;
+}
+
+section {
+    height: 100vh;
+    background-color: var(--pure-white);
+    padding: 1.25rem 34px;
+}
+h1{
+    font-weight: 700;
+    color: black;
+    text-shadow: .125rem .125rem .25rem black2c;
+}
+.sign , .login {
+    background-color: #F5FAFF;
+    padding: 50px 45px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+.game-style{
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: var(--pure-white);
+    box-shadow: 4px 4px black;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+}
+
+.Sign-btn , .login-btn , .logout-btn {
+    margin: 15px 0 20px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn:hover {
+    background-color: var(--pure-white);
+    border: 2px solid black;
+}
+
+.btn:active {
+    box-shadow: 2px 2px black;
+    transform: translate(3px, 3px);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--pure-white);
+}

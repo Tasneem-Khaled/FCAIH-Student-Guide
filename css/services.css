@@ -1,0 +1,83 @@
+:root {
+    --primary-blue: #1D256B;
+    --highlight-gold: #E2A606;
+    --light-gray: #fcfdfe;
+    --pure-white: #ffffff;
+    --border-gray: #ccc;
+    --bs-body-bg: #fcfdfe;
+}
+
+section {
+    min-height: 100vh;
+    padding-bottom: 1.75rem;
+}
+
+.steps-heading {
+    color: var(--highlight-gold);
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.step-card {
+    background-color: #f5faff;
+    height: 10.75rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    direction: rtl;
+}
+
+.step-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 27px;
+    color: var(--primary-blue);
+    padding-block: .5rem;
+}
+
+.step-card p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(78, 78, 78);
+    width: 100%;
+}
+
+#freshmanDocsCarousel .carousel-indicators [data-bs-target] {
+    background-color: var(--highlight-gold);
+}
+
+.table>:not(caption)>*>* {
+    color: rgb(78, 78, 78);
+    font-weight: 700;
+}
+
+table th {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+.office-hours p {
+    text-align: right;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    position: relative;
+    padding-right: 18px;
+}
+.office-hours p::before{
+      content: "";
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  background: var(--highlight-gold);
+  border-radius: 50%;
+}

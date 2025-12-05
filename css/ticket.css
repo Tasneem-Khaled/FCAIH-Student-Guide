@@ -1,0 +1,24 @@
+:root {
+    --primary-blue: #1D256B;
+    --highlight-gold: #E2A606;
+    --light-gray: #fcfdfe;
+    --pure-white: #ffffff;
+    --border-gray: #ccc;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+.table>:not(caption)>*>* {
+    color: rgb(78, 78, 78);
+    font-weight: 700;
+}
+
+table th{
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+}
+table td{
+    vertical-align: middle;
+}

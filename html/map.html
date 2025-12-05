@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="../FCAIH/logo1.png" rel="icon" type="image/png">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/map.css">
+
+    <title>FCAIH Bookmark</title>
+</head>
+
+<body>
+    <nav style="background-color: var(--primary-blue);" id="nav" class="navbar navbar-expand-lg fixed-top ps-lg-4">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="../FCAIH/logo1.png" width="70" alt=""><a class="navbar-brand text-white ps-1"
+                    href="../index.html">
+                    FCAIH Guide<span style="color: var(--highlight-gold);">.</span>
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="navbar-toggler-icon fa-solid fa-bars pt-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-lg-5 text-white">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.html#Services">Student Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#Contact">Contact Us</a></li>
+                </ul>
+                <a href="./html/login.html"><button class="btn nav-button rounded-5">Login</button></a>
+            </div>
+
+        </div>
+    </nav>
+    <section>
+        <div class="px-3">
+            <div class="d-flex justify-content-center align-items-center search-box gap-3 shadow">
+            <div class="d-flex gap-2 align-items-start" role="search">
+                <div class="d-flex flex-column">
+                    <input id="searchInput" class="form-control me-2" type="search"
+                        placeholder="Search for a Place or Hall's Number" aria-label="Search" />
+                    <div class="invalid-feedback">Place not found.</div>
+                </div>
+                <button class="btn-search" type="submit">Search</button>
+            </div>
+        </div>
+        </div>
+
+        <div id="map">
+            <iframe id="mapFrame" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/map.js"></script>
+    <script src="../js/nav.js"></script>
+
+</body>
+
+</html>

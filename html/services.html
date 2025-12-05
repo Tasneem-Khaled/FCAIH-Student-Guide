@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="../FCAIH/logo1.png" rel="icon" type="image/png">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/services.css">
+
+    <title>FCAIH Services Guide</title>
+</head>
+
+<body>
+    <nav style="background-color: var(--primary-blue);" id="nav" class="navbar navbar-expand-lg fixed-top ps-lg-4">
+        <div class="container">
+            <div class="logo d-flex align-items-center">
+                <img src="../FCAIH/logo1.png" width="70" alt=""><a class="navbar-brand text-white ps-1"
+                    href="../index.html">
+                    FCAIH Guide<span style="color: var(--highlight-gold);">.</span>
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="navbar-toggler-icon fa-solid fa-bars pt-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-lg-5 text-white">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../index.html#Services">Student Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#Contact">Contact Us</a></li>
+                </ul>
+                <a href="./html/login.html"><button class="btn nav-button rounded-5">Login</button></a>
+            </div>
+
+        </div>
+    </nav>
+    <section>
+        <h2 class="heading mx-auto text-center my-4">Services Guide</h2>
+        <div class="container">
+            <div class="row g-3 mt-3">
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Admission Steps &amp; Required Documents</h3>
+                            <p>A clear step-by-step guide for all documents required for admission.</p>
+                        </div>
+                        <button class="Admission-btn btn btn-primary mt-3 rounded-5">
+                            <a class="text-decoration-none text-white">
+                                <i class="fa-solid fa-shoe-prints me-2"></i>Show Steps
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="inner rounded-4 py-5 bg-white shadow p-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon mb-3 d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                            <div
+                                class="icon-in d-flex justify-content-center mx-auto align-items-center rounded-circle">
+                                <i class="fa-solid fa-paperclip"></i>
+                            </div>
+                        </div>
+                        <div class="card-desc text-center">
+                            <h3>Metro Card Application Steps</h3>
+                            <p>Every step you need to apply for your discounted student metro card.</p>
+                        </div>
+                        <button class="Metro-btn btn btn-primary mt-3 rounded-5">
+                            <a class="text-decoration-none text-white">
+                                <i class="fa-solid fa-shoe-prints me-2"></i>Show Steps
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 mb-4 steps-show"></div>
+            </div>
+            <h3 class="mx-auto text-center fw-bold" style="color: var(--highlight-gold);">مواعيد التعامل مع قسم شئون الطلاب</h3>
+            <div dir="rtl">
+                <div class="mx-auto office-hours mt-4 text-center">
+                    <p>
+                        التعامل مع الفرق من الساعة 9 ص للساعة 12:30 ظ في اليوم المخصص لها .
+                    </p>
+                    <p>
+                         تقديم ملفات أولى كل أيام الأسبوع من الأحد للخميس من الساعة 9 ص للساعة 1:30 ظ .
+                    </p>
+
+                </div>
+                <table class="mt-3 table table-striped table-white text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">اليوم</th>
+                            <th scope="col">الفرقة</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>الأحد</td>
+                            <td>أولى مستمر، ثالثة</td>
+                        </tr>
+                        <tr>
+                            <td>الإثنين</td>
+                            <td>ثانية، رابعة</td>
+                        </tr>
+                        <tr>
+                            <td>الثلاثاء</td>
+                            <td>أولى مستمر، ثالثة</td>
+                        </tr>
+                        <tr>
+                            <td>الأربعاء</td>
+                            <td>ثانية، رابعة</td>
+                        </tr>
+                        <tr>
+                            <td>الخميس</td>
+                            <td>أولى مستجدين فقط</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/services.js"></script>
+
+</body>
+
+</html>

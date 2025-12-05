@@ -1,0 +1,49 @@
+:root {
+    --primary-blue: #1D256B;
+    --highlight-gold: #E2A606;
+    --light-gray: #fcfdfe;
+    --pure-white: #ffffff;
+    --border-gray: #ccc;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.card {
+    background-color: var(--primary-blue);
+    border: 0;
+    overflow: hidden;
+}
+
+.card-body {
+    z-index: 6;
+    background-color: var(--primary-blue);
+    padding: 1.5625rem;
+}
+
+.card-body h3 {
+    font-size: 1.5625rem;
+    line-height: 1.75rem;
+    color: white;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.card-body span {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tips-list li{
+    padding-right: .625rem;
+}
+.tips-list li::before{
+    left: 100%;
+}
+.tips-list{
+    direction: rtl;
+}
