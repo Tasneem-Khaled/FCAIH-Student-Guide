@@ -83,7 +83,7 @@ function redirectToLogin(e) {
     successMessage.classList.remove('d-none');
 
     setTimeout(function () {
-        window.location.href = 'index.html';
+        window.location.href = '../html/login.html';
     }, 800);
 }
 
