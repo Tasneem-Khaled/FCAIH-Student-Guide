@@ -92,7 +92,7 @@ function redirectToHome(e) {
         personInfo[userIndex].name.toLowerCase() === usernameInput.value.trim().toLowerCase()
     ) {
         localStorage.setItem('currentUsername', personInfo[userIndex].name)
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     } else {
         warningMessage.classList.remove('d-none');
         usernameInput.classList.replace('is-valid', 'is-invalid');
